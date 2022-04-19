@@ -34,6 +34,6 @@ def candidat_skills(candidates, skill):
     result = []
     for candidate in candidates:
         skills = candidate['skills'].lower().split(', ')
-        if skill in skills:
+        if skill.lower() in skills:
             result.append(candidate)
     return result
